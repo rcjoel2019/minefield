@@ -302,6 +302,7 @@ fn main() {
 
     while game.open {
         game.listen_action();
+        game.verify_vis_open_field();
         game.print_grid();
     }
 }
